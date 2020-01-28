@@ -22,33 +22,16 @@ const App = () => {
 
     console.log("recent donation", RecentDonation, donationArray)
       let storage = {};
-      // storage.push({
-      //   totalAmount: totalAmount,
-      //   inputAmount: inputAmount,
-      //   name: name
-      // });
       storage = {
         totalAmount: totalAmount,
         inputAmount: inputAmount,
         name: name
       }
-      
-
+    
       setRecentDonation([... RecentDonation, storage ]);
   };
 
-  // useEffect(() => {
-  //   console.log(useState, totalAmount, inputAmount);
-  //   let storage = [];
-  //   storage.push({
-  //     totalAmount: totalAmount,
-  //     inputAmount: inputAmount,
-  //     name: name
-  //   });
-  //   setRecentDonation({ RecentDonation: storage });
 
-  //   console.log(storage);
-  // }, []);
 
 
   console.log("hooks", RecentDonation, inputAmount)
