@@ -25,16 +25,19 @@ const App = () => {
       storage = {
         totalAmount: totalAmount,
         inputAmount: inputAmount,
-        name: name
+        name: name,
+        caption: caption
       }
     
       setRecentDonation([... RecentDonation, storage ]);
   };
 
 
+   useEffect(() =>{
+     console.log('everytime state is being updated', totalAmount)
+   })
 
-
-  console.log("hooks", RecentDonation, inputAmount)
+  console.log("hooks", RecentDonation, inputAmount, totalAmount)
   return (
     <div className="App">
       <h1> Go Fund Me</h1>

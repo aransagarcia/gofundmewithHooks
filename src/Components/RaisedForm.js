@@ -7,7 +7,7 @@ const RaisedForm = (props) => {
     <div className="RaisedDiv">
       <h1> Raised $ {props.totalAmount} of $1000</h1>
       <form className="RaisedForm" onSubmit={props.handleSubmit}>
-        <label for="name"> Name</label>
+        <label htmlFor="name"> Name</label>
         <input
           name="name"
           type="text"
@@ -16,7 +16,7 @@ const RaisedForm = (props) => {
           onChange={e => props.setName(e.target.value)}
         ></input>
 
-        <label for="caption"> Caption</label>
+        <label htmlFor="caption"> Caption</label>
         <input
           type="text"
           placeholder="..."
