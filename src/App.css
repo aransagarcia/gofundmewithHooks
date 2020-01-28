@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: absolute;
 }
 
 .App-logo {
@@ -35,4 +36,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.RaisedForm{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  /* position: relative; */
+  /* float: right; */
+  
+}
+
+.RaisedDiv{
+  position: relative;
+  align-items: right;
+} 
+
+
+.RecentDonations{
+  position: relative;
+}
+.List{
+  align-items: left;
 }
