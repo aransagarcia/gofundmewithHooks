@@ -32,10 +32,9 @@ const App = () => {
         inputAmount: inputAmount,
         name: name
       }
-      console.log("storage", storage)
-      donationArray.push(storage)
+      
 
-      setRecentDonation({ RecentDonation: donationArray });
+      setRecentDonation([... RecentDonation, storage ]);
   };
 
   // useEffect(() => {
