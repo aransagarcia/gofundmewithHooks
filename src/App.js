@@ -23,8 +23,8 @@ const App = () => {
     console.log("recent donation", RecentDonation, donationArray)
       let storage = {};
       storage = {
-        totalAmount: totalAmount,
-        inputAmount: inputAmount,
+        totalAmount: Number(totalAmount) + Number(inputAmount),
+        inputAmount: Number(inputAmount),
         name: name,
         caption: caption
       }
@@ -32,6 +32,8 @@ const App = () => {
       setRecentDonation([... RecentDonation, storage ]);
   };
 
+
+  
 
    useEffect(() =>{
      console.log('everytime state is being updated', totalAmount)

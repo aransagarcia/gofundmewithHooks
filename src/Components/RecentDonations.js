@@ -16,11 +16,16 @@ const RecentDonations = props => {
     );
   });
 
+
+  
   return (
+   
     <div className="Recent Donations">
       <div className="List">
         <h1> Recent Donations </h1>
-    <ProgressBar/>
+    <ProgressBar 
+    totalAmount = {props.totalAmount}
+    />
         <ul>{donationList}</ul>
       </div>
     </div>
